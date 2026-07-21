@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 60px;
+
+    background-color: #1a1a1a;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+
+    margin-left: 20px;
+}
+
+section {
+    text-align: center;
+
+    padding: 120px 20px;
+}
+
+button {
+    padding: 12px 24px;
+
+    margin: 15px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+}
