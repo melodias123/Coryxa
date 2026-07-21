@@ -28,8 +28,20 @@ function swapDirection() {
 
 function calculateNether() {
 
-    const x = Number(document.getElementById("x").value);
-    const z = Number(document.getElementById("z").value);
+    const xInput = document.getElementById("x");
+    const zInput = document.getElementById("z");
+
+    const x = Number(xInput.value);
+    const z = Number(zInput.value);
+
+    if (xInput.value === "" || zInput.value === "") {
+
+        document.getElementById("result").textContent =
+            "Please enter both X and Z coordinates.";
+
+        return;
+
+    }
 
     let resultX;
     let resultZ;
