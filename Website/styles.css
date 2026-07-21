@@ -31,7 +31,25 @@ body {
 
 .logo {
 
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
     color: #4CAF50;
+}
+
+.logo img {
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 10px;
+}
+
+.logo h1 {
 
     font-size: 32px;
 }
@@ -107,4 +125,64 @@ button:hover {
     background: #3f9143;
 
     transform: translateY(-5px);
+}
+/* Featured Section */
+
+.featured {
+
+    padding: 80px 60px;
+
+    text-align: center;
+}
+
+.featured h2 {
+
+    margin-bottom: 40px;
+
+    font-size: 40px;
+}
+
+.card-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+.card {
+
+    background: #1e1e1e;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    width: 300px;
+
+    transition: 0.3s;
+}
+
+.card:hover {
+
+    transform: translateY(-8px);
+
+    box-shadow: 0 0 20px rgba(76, 175, 80, 0.4);
+}
+
+.card h3 {
+
+    color: #4CAF50;
+
+    margin-bottom: 15px;
+}
+
+.card p {
+
+    margin-bottom: 20px;
+
+    line-height: 1.5;
 }
