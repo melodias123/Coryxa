@@ -48,19 +48,40 @@ function calculateNether() {
 
     if (direction === "overworld") {
 
-        resultX = x / 8;
-        resultZ = z / 8;
+       resultX = Math.round(x / 8);
+resultZ = Math.round(z / 8);
 
-        document.getElementById("result").textContent =
-            `Nether Coordinates: X ${resultX}, Z ${resultZ}`;
+        document.getElementById("result").innerHTML =
+`
+<strong>Nether Coordinates</strong><br><br>
+
+X: ${resultX}<br>
+
+Z: ${resultZ}
+`;
 
     } else {
 
-        resultX = x * 8;
-        resultZ = z * 8;
+       resultX = Math.round(x * 8);
+resultZ = Math.round(z * 8);
 
-        document.getElementById("result").textContent =
-            `Overworld Coordinates: X ${resultX}, Z ${resultZ}`;
+        document.getElementById("result").innerHTML =
+`
+<strong>Overworld Coordinates</strong><br><br>
+
+X: ${resultX}<br>
+
+Z: ${resultZ}
+`;
+
+    }
+
+}
+function handleEnter(event) {
+
+    if (event.key === "Enter") {
+
+        calculateNether();
 
     }
 

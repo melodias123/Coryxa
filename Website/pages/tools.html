@@ -60,14 +60,15 @@
         </div>
 
         <input
-            type="number"
-            id="x"
-            placeholder="Overworld X">
-
+    type="number"
+    id="x"
+    placeholder="Overworld X"
+    onkeydown="handleEnter(event)">
         <input
             type="number"
             id="z"
-            placeholder="Overworld Z">
+            placeholder="Overworld Z"
+            onkeydown="handleEnter(event)">
 
         <button onclick="calculateNether()">
             Calculate
