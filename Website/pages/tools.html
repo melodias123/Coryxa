@@ -41,16 +41,44 @@
 
     <section class="hero">
 
-        <h2>Minecraft Tools</h2>
+    <h2>Nether Portal Calculator</h2>
 
-        <p>
+    <p>
+        Convert coordinates between the Overworld and the Nether instantly.
+    </p>
 
-            Useful calculators and tools are coming soon.
+    <div class="calculator">
 
-        </p>
+        <div class="converter-header">
 
-    </section>
+            <span id="fromLabel">Overworld</span>
 
+            <button id="swapButton" onclick="swapDirection()">⇄</button>
+
+            <span id="toLabel">Nether</span>
+
+        </div>
+
+        <input
+            type="number"
+            id="x"
+            placeholder="Overworld X">
+
+        <input
+            type="number"
+            id="z"
+            placeholder="Overworld Z">
+
+        <button onclick="calculateNether()">
+            Calculate
+        </button>
+
+        <h3 id="result"></h3>
+
+    </div>
+
+</section>
+<script src="../js/nether.js"></script>
 </body>
 
 </html>
